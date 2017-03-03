@@ -7,7 +7,7 @@ window = tk.Tk()
 window.title('Add New Customer')
 frame_1 = tk.Frame(master=window, borderwidth=2, relief="sunken", height=50)
 frame_4 = tk.Frame(master=window, borderwidth=1, width=900, height=200)
-frame_5 = tk.Frame(master=window, borderwidth=5, relief="sunken", height=50)
+frame_5 = tk.Frame(master=window, borderwidth=2, height=50)
 
 # Let's create the menu
 menubar = tk.Menu(window)
@@ -112,8 +112,7 @@ advertising_entry.current(0)
 
 save_button = tk.Button(master=frame_1, text="Save", command=file_menu)
 
-# bind button
-#indow.bind('<Return>', submit_lesson)
+
 
 # bind save
 window.bind('<Control-s>', file_saveas)
@@ -137,20 +136,20 @@ advertising_label.grid(row=12, column=0, sticky='w')
 
 # Let's put the entry fields in a GRID geometry manager!
 
-order_entry.grid(row=1, column=1, sticky='e')
-number_entry.grid(row=2, column=1, sticky='e')
-street_entry.grid(row=3, column=1, sticky='e')
-town_entry.grid(row=4, column=1, sticky='e')
-name_entry.grid(row=5, column=1, sticky='e')
-price_entry.grid(row=6, column=1, sticky='e')
-contact_entry.grid(row=7, column=1, sticky='e')
-interval_entry.grid(row=8, column=1, sticky='e')
-notes_entry.grid(row=9, column=1, sticky='e')
-status_entry.grid(row=10, column=1, sticky='e')
-round_entry.grid(row=11, column=1, sticky='e')
-advertising_entry.grid(row=12, column=1, sticky='e')
+order_entry.grid(row=1, column=1, sticky='e', pady=5)
+number_entry.grid(row=2, column=1, sticky='e', pady=5)
+street_entry.grid(row=3, column=1, sticky='e', pady=5)
+town_entry.grid(row=4, column=1, sticky='e', pady=5)
+name_entry.grid(row=5, column=1, sticky='e', pady=5)
+price_entry.grid(row=6, column=1, sticky='e', pady=5)
+contact_entry.grid(row=7, column=1, sticky='e', pady=5)
+interval_entry.grid(row=8, column=1, sticky='e', pady=5)
+notes_entry.grid(row=9, column=1, sticky='e', pady=5)
+status_entry.grid(row=10, column=1, sticky='e', pady=5)
+round_entry.grid(row=11, column=1, sticky='e', pady=5)
+advertising_entry.grid(row=12, column=1, sticky='e', pady=5)
 
-save_button.grid(row=1, column=0, sticky='e')
+save_button.grid(row=1, column=0, sticky='e', pady=5, padx=5)
 # Most importantly, GRID the frame
 frame_1.grid(row=0)
 frame_4.grid(row=1, column=0, sticky='w')
