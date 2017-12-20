@@ -1,7 +1,8 @@
+
 {
-  "name": "new_customer.js Sample",
-  "description": "A barebones Node.js app using Express 4",
-  "repository": "https://github.com/miguelms19/miguelms19",
-  "logo": "https://node-js-sample.herokuapp.com/node.png",
-  "keywords": ["node", "express", "static"]
+  "name": "Flask Portfolio App",
+  "description": "A simple portfolio app built with python",
+  "repository": "https://github.com/driftyco/ionic-heroku-button",
+  "logo": "http://www.unixstickers.com/image/data/stickers/flask/Flask-logo.sh.png",
+  "keywords": ["Flask", "Portfolio"]
 }
