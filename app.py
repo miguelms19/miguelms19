@@ -11,6 +11,8 @@ app = Flask(__name__)
 def home_page():
 	return 'This is the home page'
 
+def cp_print_cp():
+    print('Clever Programmer!')
 
 if __name__ == '__main__':
 	app.run()
