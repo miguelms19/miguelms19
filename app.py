@@ -11,6 +11,10 @@ app = Flask(_name)
 
 
 @app.route(/new_customer, methods=['GET', 'POST'])
+def new_customer_post():
+	if request.method == 'GET':
+		return render_template('new_customer.html')
+
 
 
 
