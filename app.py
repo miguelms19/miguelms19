@@ -7,7 +7,7 @@ import pytz # timezone
 import requests
 import os
 
-app = Flask(_name)
+app = Flask(_name_)
 
 
 @app.route(/new_customer)
