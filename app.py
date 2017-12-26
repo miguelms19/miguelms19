@@ -8,8 +8,12 @@ import os
 app = Flask(__name__)
 
 @app.route('/profile/<name>')
-def home_page(name):
+def profile_page(name):
 	return render_template("profile.html", name=name)
+
+@app.route('/')
+def home_page():
+	return render_template("index.html")
 
 
 
