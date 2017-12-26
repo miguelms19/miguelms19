@@ -9,7 +9,7 @@ import os
 
 app = Flask(_name_)
 
-@app.route('/', methods=['GET'])
+@app.route('/')
 def home_page():
 	return render_template('index.html')
 
