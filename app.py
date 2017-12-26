@@ -7,9 +7,9 @@ import os
 
 app = Flask(__name__)
 
-@app.route('/')
-def home_page():
-	return "this is my homepage"
+@app.route('/profile/<name>')
+def home_page(name):
+	return render_template("profile.html", name=name)
 
 
 
