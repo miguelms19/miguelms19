@@ -1,5 +1,5 @@
 
-from flask import Flask
+from flask import Flask, render_template
 import datetime
 import pytz # timezone 
 import requests
