@@ -9,6 +9,9 @@ import os
 
 app = Flask(_name_)
 
+@app.route('/', methods=['GET'])
+def home_page():
+	return render_template('index.html')
 
 @app.route('/new_customer')
 def new_customer_page():
