@@ -10,7 +10,7 @@ import os
 app = Flask(_name_)
 
 
-@app.route(/new_customer)
+@app.route('/new_customer')
 def new_customer_page():
 	return render_template('new_customer.html')
 
