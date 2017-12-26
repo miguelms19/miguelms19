@@ -2,6 +2,8 @@ import tkinter as tk
 from tkinter import ttk, StringVar
 from tkinter import filedialog
 
+app = Flask(__name__)
+    
 window = tk.Tk()
 
 window.title('Add New Customer')
@@ -157,3 +159,4 @@ frame_5.grid(row=2, column=0, sticky='w')
 
 
 window.mainloop()
+
