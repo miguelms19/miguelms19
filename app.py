@@ -1,7 +1,5 @@
-import tkinter as tk
-from tkinter import ttk, StringVar
-from tkinter import filedialog
-from flask import Flask, render_template, request, redirect
+
+from flask import Flask
 import datetime
 import pytz # timezone 
 import requests
