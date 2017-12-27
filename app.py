@@ -12,8 +12,9 @@ def profile_page(name):
 	return render_template("profile.html", name=name)
 
 @app.route('/')
-def home_page():
-	return render_template("index.html")
+@app.route('/<user>')
+def home_page(user=None):
+	return render_template("index.html", user=user)
 
 
 
