@@ -14,7 +14,7 @@ def profile_page(name):
 @app.route('/')
 @app.route('/<user>')
 def home_page(user=None):
-	return render_template("index.html", user=user)
+	return render_template("user.html", user=user)
 
 
 
